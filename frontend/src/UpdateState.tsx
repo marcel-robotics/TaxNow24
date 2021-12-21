@@ -1,10 +1,10 @@
 import React from "react";
-import styles from "./CreateState.module.css";
+import styles from "./UpdateState.module.css";
 
-export function CreateState(_props: any): JSX.Element {
+export function UpdateState(_props: any): JSX.Element {
   return (
     <section>
-      <h1>Create state</h1>
+      <h1>Update state</h1>
       <div className={styles.card}>
         <p>
           <label htmlFor="state-name">State name:</label>
@@ -20,7 +20,7 @@ export function CreateState(_props: any): JSX.Element {
             type="submit"
             className={`${styles.button} ${styles.buttonPrimary}`}
           >
-            Create State Tax
+            Update State Tax
           </button>
         </p>
       </div>

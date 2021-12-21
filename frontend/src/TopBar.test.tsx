@@ -11,7 +11,7 @@ describe("TopBar component", () => {
       </MemoryRouter>
     );
 
-    const createStateNavigation = screen.getByText(/create state/i);
+    const createStateNavigation = screen.getByText(/update state/i);
 
     expect(createStateNavigation).toBeInTheDocument();
   });

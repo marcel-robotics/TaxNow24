@@ -9,7 +9,7 @@ export function TopBar(_props: any): JSX.Element {
         <div className={styles.logo}>TaxNow24</div>
         <nav>
           <Link className={styles.navigationItem} to="/">
-            Create State
+            Update State
           </Link>
         </nav>
       </div>
