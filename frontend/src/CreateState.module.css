@@ -1,0 +1,39 @@
+@value colors: "./colors.css";
+@value custom-white, primary, primary-light from colors;
+@value sizes: "./sizes.css";
+@value normal-space, font-size-normal from sizes;
+
+.card {
+  background-color: custom-white;
+  padding: normal-space;
+  border-radius: calc(normal-space / 2);
+}
+
+.button {
+  cursor: pointer;
+  display: inline-block;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  padding: 0.6rem 1.2rem;
+  font-size: font-size-normal;
+  line-height: 2.4rem;
+  border-radius: 0.3rem;
+  box-sizing: border-box;
+  text-decoration: none;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  min-width: 8rem;
+  margin-right: normal-space;
+}
+
+.buttonPrimary {
+  color: custom-white;
+  background-color: primary;
+  border: 1px solid primary-light;
+}
+
+.button:hover {
+  background-color: primary-light;
+  color: custom-white;
+}
