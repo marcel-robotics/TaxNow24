@@ -5,17 +5,17 @@
 	<parent>
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
-		<version>2.5.6</version>
+		<version>2.6.2</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>com.gropyus.interviews</groupId>
-	<artifactId>taxcalculator</artifactId>
+	<groupId>io.taxnow24</groupId>
+	<artifactId>backend</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>Tax Calculator</name>
-	<description>Demo project for Spring Boot</description>
+	<name>TaxNow24 Backend</name>
+	<description>Backend for the TaxNow24 b2b platform</description>
 	<properties>
 		<java.version>11</java.version>
-		<kotlin.version>1.5.31</kotlin.version>
+		<kotlin.version>1.6.10</kotlin.version>
 	</properties>
 	<dependencies>
 		<dependency>

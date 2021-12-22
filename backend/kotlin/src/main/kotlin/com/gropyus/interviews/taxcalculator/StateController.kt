@@ -3,7 +3,6 @@ package com.gropyus.interviews.taxcalculator
 import org.springframework.http.MediaType
 import org.springframework.web.bind.annotation.*
 
-
 @RestController
 @RequestMapping("/states")
 class StateController {

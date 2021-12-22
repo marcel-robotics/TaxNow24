@@ -1,4 +1,4 @@
-package com.gropyus.interviews.taxcalculator;
+package io.taxnow24.backend;
 
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;

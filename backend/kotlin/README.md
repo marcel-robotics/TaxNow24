@@ -30,3 +30,9 @@ curl localhost:8080/states
 # interact - define the tax amount per state
 curl -X POST -H 'Content-Type: application/json' -d '0.08' localhost:8080/states/UT/tax
 ```
+
+## Create production jar
+To create a production jar locally run:
+```bash
+./mvnw clean package spring-boot:repackage
+```
