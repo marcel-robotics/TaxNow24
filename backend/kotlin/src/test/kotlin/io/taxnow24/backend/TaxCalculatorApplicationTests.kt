@@ -1,4 +1,4 @@
-package com.gropyus.interviews.taxcalculator
+package io.taxnow24.backend
 
 import org.junit.jupiter.api.Test
 import org.springframework.boot.test.context.SpringBootTest

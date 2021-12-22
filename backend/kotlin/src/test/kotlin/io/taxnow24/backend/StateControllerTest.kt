@@ -1,4 +1,4 @@
-package com.gropyus.interviews.taxcalculator
+package io.taxnow24.backend
 
 import org.assertj.core.api.Assertions
 import org.junit.jupiter.api.Test
