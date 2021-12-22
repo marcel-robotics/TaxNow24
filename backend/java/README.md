@@ -1,19 +1,30 @@
-# TaxCalculator - Java
+# Backend - Java
 
-A service that can perform various tax calculations for a store.
+A java spring boot service that can perform various tax calculations for the [frontend](../../frontend/).
+It uses maven as a build tool.
 
-## Running tests
+## Prerequisites
+* [java](https://yarnpkg.com/getting-started/install) (at least jdk version 11)
 
+## Installing dependencies
+```bash
+./mvnw install
+```
+
+## Tests and checks
+To run all tests:
 ```bash
 ./mvnw verify
 ```
 
-## Running the service
-
+## Run locally
+To start the service locally at http://localhost:8080:
 ```bash
-# start the server
 ./mvnw spring-boot:run
+```
 
+To interact with it:
+```bash
 # interact - get the list of supported states
 curl localhost:8080/states
 # interact - define the tax amount per state

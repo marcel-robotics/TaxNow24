@@ -1,5 +1,8 @@
 # Frontend
 A react and typescript single page application bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
+This service displays tax information and can display total prices it gets from the [backend](../backend/).
+
 It uses [yarn](https://yarnpkg.com/getting-started/install) for building, testing and nearly everything else.
 
 ## Prerequisites
