@@ -1,8 +1,9 @@
 # TaxNow24
 A tax calculator that delivers impact and disrupts the e-commerce marketplace experience.
 
-* [Backend](backend)
 * [Frontend](frontend)
+* [Backend](backend)
+* [Event-Bridge](eventbridge)
 
 All diagrams are drawn with [excalidraw](https://excalidraw.com/).
 
