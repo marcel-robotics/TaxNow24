@@ -1,5 +1,6 @@
 import logging
 import os
+from os.path import exists
 from datetime import datetime
 from typing import TypedDict, List
 
@@ -50,4 +51,6 @@ def persist_raw_event(raw_event: RawEvent) -> None:
         os.makedirs(path)
     except FileExistsError:
         logging.info("folder already exists for %s", path)
-    data_frame.to_parquet(f"{path}/{event_time.timestamp()}.parquet")
+    parquet_file_name = f"{path}/{event_time.timestamp()}.parquet"
+    if not exists(parquet_file_name):
+        data_frame.to_parquet(parquet_file_name)
