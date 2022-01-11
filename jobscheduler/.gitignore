@@ -65,4 +65,5 @@ dmypy.json
 # IDE
 .idea
 .vscode
+jobscheduler/logs
 requirements.txt
