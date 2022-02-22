@@ -57,3 +57,8 @@ test: unit-test integration-test ## Runs all tests
 
 .PHONY: check
 check: auto-format lint type-check test ## Runs all code checks and tests
+
+.PHONY: deploy
+deploy: ## Deploys jobs into datalake
+	poetry build
+	mv ./dist/jobs-*.whl ../datalake/jobs
