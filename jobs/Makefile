@@ -33,11 +33,11 @@ requirements.txt: ## Creates requirements.txt file
 
 .PHONY: lint
 lint: ## Checks code formatting and style
-	poetry run pylint $(SRC_PATH) ./tests
+	poetry run pylint $(SRC_PATH)
 
 .PHONY: type-check
 type-check: ## Checks types
-	poetry run mypy --ignore-missing-imports --strict --allow-subclassing-any \
+	poetry run mypy --ignore-missing-imports --strict --allow-subclassing-any --follow-imports=skip \
 		$(SRC_PATH)
 
 .PHONY: auto-format
@@ -61,4 +61,15 @@ check: auto-format lint type-check test ## Runs all code checks and tests
 .PHONY: deploy
 deploy: ## Deploys jobs into datalake
 	poetry build
-	mv ./dist/jobs-*.whl ../datalake/jobs
+	cp ./dist/jobs-*.whl ../datalake/jobs
+	cp ./jobs/run_*.py ../datalake/jobs
+
+.PHONY: run
+run: ## Run a specific job locally
+	poetry run spark-submit \
+        --master local \
+        --packages org.apache.spark:spark-avro_2.12:3.2.1 \
+        --py-files dist/jobs-*.whl \
+        $(JOB_RUN_FILE) \
+        $(INPUT_FILE) \
+        $(OUTPUT_FILE)

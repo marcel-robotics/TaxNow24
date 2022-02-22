@@ -47,3 +47,18 @@ make lint
 ```bash
 make type-check
 ```
+
+## Run locally
+To run locally:
+```bash
+JOB_RUN_FILE="jobs/run_<job_name>.py" INPUT_FILE="<input_file>" OUTPUT_FILE="<output_file>" make run
+```
+
+where
+```
+<job_name> is the name of the job you want to run
+
+<input_file> is the input file for the job
+
+<output_file> is the output file for the job
+```
