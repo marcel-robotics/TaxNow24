@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "jobs"
+version = "0.1.0"
+description = "Jobs to transform data"
+authors = ["TaxNow24 <engineering@taxnow24.io>"]
+
+[tool.poetry.dependencies]
+python = "~3.10"
+click = "^8.0.4"
+pyspark = "^3.2.1"
+
+[tool.poetry.dev-dependencies]
+mypy = "^0.910"
+black = "^21.7b0"
+pylint = "^2.9.5"
+pytest = "^6.2.4"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
