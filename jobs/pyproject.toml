@@ -6,7 +6,7 @@ authors = ["TaxNow24 <engineering@taxnow24.io>"]
 
 [tool.poetry.dependencies]
 python = "~3.10"
-click = "^8.0.4"
+click = "=8.0.4"
 pyspark = "^3.2.1"
 
 [tool.poetry.dev-dependencies]

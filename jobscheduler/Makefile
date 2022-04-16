@@ -33,4 +33,4 @@ requirements.txt: ## Creates requirements.txt file
 
 .PHONY: run
 run:  ## Runs this service
-	AIRFLOW_HOME=./jobscheduler poetry run airflow standalone
+	AIRFLOW_HOME=$(SRC_PATH) poetry run airflow standalone

@@ -44,7 +44,8 @@ def persist_raw_event(raw_event: RawEvent) -> None:
     )
     path = (
         f"{BASE_PATH}/events/pricing_events/"
-        f"{event_time.strftime('%Y')}/{event_time.strftime('%m')}/{event_time.strftime('%d')}/{event_time.strftime('%H')}"
+        f"{event_time.strftime('%Y')}/{event_time.strftime('%m')}/"
+        f"{event_time.strftime('%d')}/{event_time.strftime('%H')}"
     )
     data_frame = pd.DataFrame([raw_event])
     try:
