@@ -3,6 +3,7 @@ A collection of _Python_ (spark) jobs to transform data that are build with poet
 
 ## Prerequisites
 * Python >= 3.10, you can use for example [pyenv](https://github.com/pyenv/pyenv#installation) to manage that
+* Java >= 8, you can install it with [temurin](https://adoptium.net/en-GB/temurin/releases)
 * [Poetry](https://python-poetry.org/docs/#installation)
 
 ## Installing dependencies
