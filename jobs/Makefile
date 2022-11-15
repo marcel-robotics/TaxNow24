@@ -73,3 +73,7 @@ run: ## Run a specific job locally
         $(JOB_RUN_FILE) \
         $(INPUT_FILE) \
         $(OUTPUT_FILE)
+
+.PHONY: check-setup
+check-setup: ## Check if the setup with all dependencies is working as needed
+	poetry run pytest -v -s ./tests/integration/test_event_listing.py
