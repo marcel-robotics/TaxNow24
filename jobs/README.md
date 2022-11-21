@@ -11,6 +11,11 @@ A collection of _Python_ (spark) jobs to transform data that are build with poet
 make install
 ```
 
+### Ensure setup is working and ready for the challenge
+```bash
+make check-setup
+```
+
 ## Tests and checks
 To run all tests and checks:
 ```bash
